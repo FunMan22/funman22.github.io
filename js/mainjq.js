@@ -1,17 +1,12 @@
 $(document).ready(function() {
    var timesRun = 0;
    checkScroll();
+   checkResize();
    $(window).scroll(function() {
       checkScroll();
    });
-
-   // Gets availible width in the nav bar
-   var takenWidth = $("h2.title-text").width();
-   var totalWidth = $(window).width();
-   var remainWidth = totalWidth - takenWidth;
-   // makes the ul the size of the remaining width on the page. (Acts as a container)
-   $("ul.nav-list").css({
-      "width": remainWidth + "px"
+   $(window).resize(function() {
+      checkResize();
    });
 
    // Gets the number of nav links and counts their width
@@ -61,7 +56,18 @@ $(document).ready(function() {
       timesRun += 1;
 
    }
-
+   
+   
+   function checkResize() {
+      // Gets availible width in the nav bar
+      var takenWidth = $("h2.title-text").width();
+      var totalWidth = $(window).width();
+      var remainWidth = totalWidth - takenWidth;
+      // makes the ul the size of the remaining width on the page. (Acts as a container)
+      $("ul.nav-list").css({
+         "width": remainWidth + "px"
+      });
+   }
 
 
 
