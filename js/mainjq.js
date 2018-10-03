@@ -5,15 +5,16 @@ $(document).ready(function() {
       checkScroll();
    });
 
-
+   // Gets availible width in the nav bar
    var takenWidth = $("h2.title-text").width();
    var totalWidth = $(window).width();
    var remainWidth = totalWidth - takenWidth;
+   // makes the ul the size of the remaining width on the page. (Acts as a container)
    $("ul.nav-list").css({
       "width": remainWidth + "px"
    });
 
-   /*might need to make this better so it works with pixels and not %*/
+   // Gets the number of nav links and counts their width
    var navitems = $("ul.nav-list").children().length;
    var navitemsWidth = 0;
    var i = 0;
@@ -23,11 +24,16 @@ $(document).ready(function() {
       navitemsWidth += currentWidth;
       navindex += 1;
       i++;
-      
-
    }
-   var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 2; /*TODO:accounting for a couple extra pixels*/
+   
+   
+   // Sets the new padding for the li tag
+   var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 4;
    $("li.nav").css({
+      "padding-left": paddingwidth,
+      "padding-right": paddingwidth
+   });
+   $("a.nav").css({
       "padding-left": paddingwidth,
       "padding-right": paddingwidth
    });
