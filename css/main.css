@@ -91,7 +91,7 @@ li.nav {
 
 a.nav {
    font-size: 20px;
-   padding: 12px /*36px*/;
+   padding: 12px 0px;/*36px*/
    text-decoration: none;
    background-color: #2da306;
    color: white;
