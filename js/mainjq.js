@@ -25,6 +25,7 @@ $(document).ready(function() {
    
    // Sets the new padding for the li tag
    var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 4;
+   debugger;
    $("li.nav").css({
       "padding-left": paddingwidth,
       "padding-right": paddingwidth
