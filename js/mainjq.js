@@ -1,7 +1,7 @@
 $(document).ready(function() {
    var timesRun = 0;
    var remainWidth = 0;
-   checkScroll();
+   //checkScroll();
    checkResize();
    $(window).scroll(function() {
       checkScroll();
