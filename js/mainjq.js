@@ -62,6 +62,7 @@ $(document).ready(function() {
 
    function checkResize() {
       // Gets availible width in the nav bar
+      debugger;
       var takenWidth = $("h2.title-text").width();
       var totalWidth = $(window).width();
       var remainWidth = totalWidth - takenWidth;
