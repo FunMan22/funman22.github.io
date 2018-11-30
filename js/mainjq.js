@@ -70,6 +70,7 @@ $(document).ready(function() {
       $("ul.nav-list").css({
          "width": remainWidth + "px"
       });
+      return remainWidth;
       debugger;
    }
 
