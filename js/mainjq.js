@@ -21,19 +21,6 @@ $(document).ready(function() {
       navindex += 1;
       i++;
    }
-   
-   
-   // Sets the new padding for the li tag
-   var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 4;
-   debugger;
-   $("li.nav").css({
-      "padding-left": paddingwidth,
-      "padding-right": paddingwidth
-   });
-   $("a.nav").css({
-      "padding-left": paddingwidth,
-      "padding-right": paddingwidth
-   });
 
 
 
