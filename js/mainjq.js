@@ -77,10 +77,10 @@ $(document).ready(function() {
       }
       
       function resizeLeft() {
-         var totalWidth = $("colunmleft").width();
-         var takenWidth = $("colunmleft").padding
-         var remainWidth = /*totalWidth - */ $("colunmleft").innerWidth();
-         $("div#square").css({
+         var totalWidth = $("#colunmleft").width();
+         var takenWidth = $("#colunmleft").padding
+         var remainWidth = /*totalWidth - */ $("#colunmleft").innerWidth();
+         $("div.square").css({
             "width": remainWidth,
             "height": remainWidth
          });
