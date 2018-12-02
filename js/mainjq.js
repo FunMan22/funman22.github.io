@@ -51,7 +51,9 @@ $(document).ready(function() {
       console.log("Check Resize ran!");
       function resizeNav() {
          // Gets availible width in the nav bar
+         console.log("Before Debugger!");
          debugger;
+         console.log("After Debugger!");
          var takenWidth = $("h2.title-text").width();
          var totalWidth = $(window).width();
          var remainWidth = totalWidth - takenWidth;
