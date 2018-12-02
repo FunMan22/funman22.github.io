@@ -61,17 +61,40 @@ $(document).ready(function() {
 
 
    function checkResize() {
-      // Gets availible width in the nav bar
-      debugger;
-      var takenWidth = $("h2.title-text").width();
-      var totalWidth = $(window).width();
-      var remainWidth = totalWidth - takenWidth;
-      // makes the ul the size of the remaining width on the page. (Acts as a container)
-      $("ul.nav-list").css({
-         "width": remainWidth + "px"
-      });
-      return remainWidth;
-      debugger;
+      function resizeNav() {
+         // Gets availible width in the nav bar
+         debugger;
+         var takenWidth = $("h2.title-text").width();
+         var totalWidth = $(window).width();
+         var remainWidth = totalWidth - takenWidth;
+         // makes the ul the size of the remaining width on the page. (Acts as a container)
+         $("ul.nav-list").css({
+            "width": remainWidth + "px"
+         });
+
+
+         // Sets the new padding for the li tag
+         var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 4;
+         debugger;
+         $("li.nav").css({
+            "padding-left": paddingwidth,
+            "padding-right": paddingwidth
+         });
+         $("a.nav").css({
+            "padding-left": paddingwidth,
+            "padding-right": paddingwidth
+         });
+      }
+      
+      function resizeLeft() {
+         var totalWidth = $("colunmleft").width();
+         var takenWidth = $("colunmleft").padding
+         var remainWidth = /*totalWidth - */ $("colunmleft").innerWidth();
+         $("div#square").css({
+            "width": remainWidth,
+            "height: remainWidth
+         });
+
    }
 
 
