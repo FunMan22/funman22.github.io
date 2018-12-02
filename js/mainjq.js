@@ -94,12 +94,9 @@ $(document).ready(function() {
             "width": remainWidth,
             "height": remainWidth
          });
-
-   }
-
-
+      
+      }
 
 
 
-
-};
+});
