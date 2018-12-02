@@ -92,7 +92,7 @@ $(document).ready(function() {
          var remainWidth = /*totalWidth - */ $("colunmleft").innerWidth();
          $("div#square").css({
             "width": remainWidth,
-            "height: remainWidth
+            "height": remainWidth
          });
 
    }
