@@ -48,6 +48,7 @@ $(document).ready(function() {
 
 
    function checkResize() {
+      debugger;
       function resizeNav() {
          // Gets availible width in the nav bar
          console.log("Before Debugger!");
