@@ -49,7 +49,13 @@ $(document).ready(function() {
 
    function checkResize() {
       debugger;
-      function resizeNav() {
+      resizeNav();
+      resizeLeft();
+   }
+   
+   
+   var resizeNav = (function () {
+      return function () {
          // Gets availible width in the nav bar
          console.log("Before Debugger!");
          debugger;
@@ -75,8 +81,10 @@ $(document).ready(function() {
             "padding-right": paddingwidth
          });
       }
-      
-      function resizeLeft() {
+   })();
+
+   var resizeLeft = (function () {
+      return function () {
          var totalWidth = $("#colunmleft").width();
          var takenWidth = $("#colunmleft").padding
          var remainWidth = /*totalWidth - */ $("#colunmleft").innerWidth();
@@ -84,9 +92,9 @@ $(document).ready(function() {
             "width": remainWidth,
             "height": remainWidth
          });
-      
       }
    }
+
 
 
 
