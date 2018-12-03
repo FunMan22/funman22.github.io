@@ -48,9 +48,6 @@ $(document).ready(function() {
    var resizeNav = (function () {
       return function () {
          // Gets availible width in the nav bar
-         console.log("Before Debugger!");
-         debugger;
-         console.log("After Debugger!");
          var takenWidth = $("h2.title-text").width();
          var totalWidth = $(window).width();
          var remainWidth = totalWidth - takenWidth;
@@ -79,10 +76,12 @@ $(document).ready(function() {
          var totalWidth = $("#colunmleft").width();
          var takenWidth = $("#colunmleft").padding
          var remainWidth = /*totalWidth - */ $("#colunmleft").innerWidth();
+         debugger;
          $("div.square").css({
             "width": remainWidth,
             "height": remainWidth
          });
+         debugger;
       }
    }
 )
