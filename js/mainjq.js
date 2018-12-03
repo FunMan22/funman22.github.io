@@ -1,8 +1,6 @@
 $(document).ready(function() {
    var timesRun = 0;
    var remainWidth = 0;
-   //checkScroll();
-   checkResize();
    $(window).scroll(function() {
       checkScroll();
    });
@@ -96,5 +94,9 @@ $(document).ready(function() {
       resizeNav();
       resizeLeft();
    }
-
+   
+   
+   
+   checkScroll();
+   checkResize();
 )});
