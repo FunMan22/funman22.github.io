@@ -73,12 +73,10 @@ $(document).ready(function() {
    var resizeLeft = (function () {
       return function () {
          var remainWidth = $("#columnleft").width();
-         debugger;
          $("div.square").css({
             "width": remainWidth,
             "height": remainWidth
          });
-         debugger;
       }
    })();
 
