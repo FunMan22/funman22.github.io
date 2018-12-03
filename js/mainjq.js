@@ -46,7 +46,6 @@ $(document).ready(function() {
    
    
    var resizeNav = (function () {
-      var counter = 1;
       return function () {
          // Gets availible width in the nav bar
          console.log("Before Debugger!");
@@ -76,7 +75,6 @@ $(document).ready(function() {
    })();
 
    var resizeLeft = (function () {
-      var counterer = 2;
       return function () {
          var totalWidth = $("#colunmleft").width();
          var takenWidth = $("#colunmleft").padding
