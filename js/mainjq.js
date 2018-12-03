@@ -73,9 +73,9 @@ $(document).ready(function() {
 
    var resizeLeft = (function () {
       return function () {
-         var totalWidth = $("#colunmleft").width();
-         var takenWidth = $("#colunmleft").padding
-         var remainWidth = /*totalWidth - */ $("#colunmleft").innerWidth();
+         var totalWidth = $("#columnleft").width();
+         var takenWidth = $("#columnleft").padding
+         var remainWidth = /*totalWidth - */ $("#columnleft").innerWidth();
          debugger;
          $("div.square").css({
             "width": remainWidth,
