@@ -210,7 +210,7 @@ a.activenav{
 
 .columnheader {
    text-align: center;
-   font-size: 5vw;
+   font-size: 0.5vw;
    font-weight: 200;
 }
 
@@ -223,12 +223,12 @@ a.activenav{
 
 .pasttitle {
    text-align: center;
-   font-size: 3vw;
+   font-size: 0.3vw;
 }
 
 .pastdate {
    text-align: center;
-   font-size: 2vw;
+   font-size: 0.2vw;
 }
 
 .left {
