@@ -45,13 +45,6 @@ $(document).ready(function() {
       timesRun += 1;
 
    }
-
-
-   function checkResize() {
-      debugger;
-      resizeNav();
-      resizeLeft();
-   }
    
    
    var resizeNav = (function () {
@@ -98,5 +91,10 @@ $(document).ready(function() {
    }
 
 
+   function checkResize() {
+      debugger;
+      resizeNav();
+      resizeLeft();
+   }
 
 )});
