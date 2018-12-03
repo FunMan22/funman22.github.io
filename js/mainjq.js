@@ -87,7 +87,7 @@ $(document).ready(function() {
          });
       }
    }
-
+)
 
    function checkResize() {
       debugger;
@@ -99,4 +99,6 @@ $(document).ready(function() {
    
    checkScroll();
    checkResize();
-)});
+
+
+});
