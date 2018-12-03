@@ -59,7 +59,6 @@ $(document).ready(function() {
 
          // Sets the new padding for the li tag
          var paddingwidth = (((remainWidth - navitemsWidth) / navitems) - 10) / 4;
-         debugger;
          $("li.nav").css({
             "padding-left": paddingwidth,
             "padding-right": paddingwidth
@@ -73,9 +72,7 @@ $(document).ready(function() {
 
    var resizeLeft = (function () {
       return function () {
-         var totalWidth = $("#columnleft").width();
-         var takenWidth = $("#columnleft").padding
-         var remainWidth = /*totalWidth - */ $("#columnleft").innerWidth();
+         var remainWidth = $("#columnleft").width();
          debugger;
          $("div.square").css({
             "width": remainWidth,
@@ -86,7 +83,6 @@ $(document).ready(function() {
    })();
 
    function checkResize() {
-      debugger;
       resizeNav();
       resizeLeft();
    }
