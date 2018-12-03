@@ -210,20 +210,25 @@ a.activenav{
 
 .columnheader {
    text-align: center;
-   font-size: 30;
-   font: 
+   font-size: 5vw;
+   font-weight: 200;
 }
 
 .pastimage {
-   
+   margin: 0 auto;
+   height: 100px;
+   width: 100px;
+   border-radius: 3px;
 }
 
 .pasttitle {
-   
+   text-align: center;
+   font-size: 3vw;
 }
 
 .pastdate {
-   
+   text-align: center;
+   font-size: 2vw;
 }
 
 .left {
