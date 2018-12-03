@@ -83,8 +83,7 @@ $(document).ready(function() {
          });
          debugger;
       }
-   }
-)
+   })();
 
    function checkResize() {
       debugger;
