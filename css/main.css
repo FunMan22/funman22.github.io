@@ -221,6 +221,7 @@ a.activenav{
    height: 100px;
    width: 100px;
    border-radius: 7px;
+   display: block;
 }
 
 .pasttitle {
