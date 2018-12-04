@@ -227,6 +227,7 @@ a.activenav{
 .pasttitle {
    text-align: center;
    font-size: 1.5vw;
+   display: block;
 }
 
 .pastdate {
