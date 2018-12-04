@@ -1,13 +1,14 @@
 $(document).ready(function() {
    var timesRun = 0;
    var remainWidth = 0;
+   debugger;
    $(window).scroll(function() {
       checkScroll();
    });
    $(window).resize(function() {
       checkResize();
    });
-
+   debugger;
    // Gets the number of nav links and counts their width
    var navitems = $("ul.nav-list").children().length;
    var navitemsWidth = 0;
