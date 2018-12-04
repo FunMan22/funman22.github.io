@@ -20,7 +20,7 @@ $(document).ready(function() {
       i++;
    }
 
-   $("div#nav-placeholder").load("header.html");
+   $("div#header-placeholder").load("header.html");
 
    function checkScroll() {
       var column = document.getElementById("columnleft");
