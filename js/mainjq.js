@@ -1,6 +1,7 @@
 $(document).ready(function() {
    var timesRun = 0;
    var remainWidth = 0;
+   $("div#header-placeholder").load("header.html");
    $(window).scroll(function() {
       checkScroll();
    });
@@ -20,7 +21,6 @@ $(document).ready(function() {
       i++;
    }
 
-   $("div#header-placeholder").load("header.html");
 
    function checkScroll() {
       var column = document.getElementById("columnleft");
