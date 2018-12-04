@@ -1,7 +1,6 @@
 $(document).ready(function() {
    var timesRun = 0;
    var remainWidth = 0;
-   $("div#header-placeholder").load("header.html");
    $(window).scroll(function() {
       checkScroll();
    });
