@@ -16,7 +16,7 @@
    <div id="header-placeholder"></div>
    <script>
    $(function(){
-     $("#header-placeholder").load("header.html");
+     $("#header-placeholder").load("header.html", function(){setTimeout(1);});
    });
    </script>
    <script src="/js/mainjq.js"></script>
