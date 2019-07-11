@@ -1,5 +1,5 @@
 $(document).ready(function() {
-   $(window).onload(function() {
+   window.onload = function() {
       var timesRun = 0;
       var remainWidth = 0;
       debugger;
@@ -92,5 +92,5 @@ $(document).ready(function() {
       checkResize();
 
 
-   });
+   }
 });
