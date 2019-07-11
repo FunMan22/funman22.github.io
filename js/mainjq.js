@@ -87,10 +87,12 @@ $(document).ready(function() {
       }
 
 
-
-      checkScroll();
-      checkResize();
-
+      function runFormat() {
+         checkScroll();
+         checkResize();
+      }
+      
+      runFormat()
 
    }
 });
